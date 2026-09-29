@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 800" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1B2A4A"/>
+      <stop offset="1" stop-color="#0F1626"/>
+    </linearGradient>
+    <linearGradient id="body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#222C42"/>
+      <stop offset="1" stop-color="#1A2233"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-20%" width="160%" height="140%">
+      <feDropShadow dx="0" dy="24" stdDeviation="30" flood-color="#000" flood-opacity="0.45"/>
+    </filter>
+    <style>
+      .num { fill: #2C3750; }
+      .fn { fill: #3A4763; }
+      .op { fill: #F2B544; }
+      .kt { font-size: 26px; fill: #E6EAF2; text-anchor: middle; }
+      .ot { font-size: 28px; font-weight: 700; fill: #1B2A4A; text-anchor: middle; }
+      .ft { font-size: 22px; font-weight: 600; fill: #F2C25E; text-anchor: middle; }
+      .muted { fill: #9AA7BD; }
+    </style>
+  </defs>
+
+  <!-- Browser chrome -->
+  <rect width="1280" height="800" fill="url(#bg)"/>
+  <rect width="1280" height="56" fill="#E6EBF2"/>
+  <circle cx="28" cy="28" r="7" fill="#EF6B5E"/><circle cx="50" cy="28" r="7" fill="#F2B544"/><circle cx="72" cy="28" r="7" fill="#2F9E6E"/>
+  <rect x="340" y="14" width="600" height="28" rx="14" fill="#fff"/>
+  <text x="640" y="33" font-size="14" text-anchor="middle" fill="#5B6B85">ayesha-bashir.github.io/calculator</text>
+
+  <!-- Background glow -->
+  <circle cx="640" cy="420" r="300" fill="#2F7D6D" opacity="0.12"/>
+  <circle cx="1080" cy="660" r="140" fill="#F2B544" opacity="0.07"/>
+
+  <!-- Calculator body -->
+  <rect x="470" y="96" width="340" height="636" rx="30" fill="url(#body)" stroke="#34405A" stroke-width="1.5" filter="url(#shadow)"/>
+
+  <!-- Display -->
+  <text x="780" y="150" font-size="15" text-anchor="end" class="muted">18 × 4 = 72</text>
+  <text x="780" y="198" font-size="24" text-anchor="end" fill="#C9D2E3">2,497 ÷ 2</text>
+  <text x="780" y="268" font-size="66" font-weight="300" text-anchor="end" fill="#fff">1,248.5</text>
+  <line x1="494" y1="296" x2="786" y2="296" stroke="#34405A" stroke-width="1.5"/>
+
+  <!-- Row 1 -->
+  <rect x="494" y="316" width="66" height="66" rx="20" class="fn"/><text x="527" y="357" class="ft">AC</text>
+  <rect x="572" y="316" width="66" height="66" rx="20" class="fn"/><text x="605" y="357" class="ft">±</text>
+  <rect x="650" y="316" width="66" height="66" rx="20" class="fn"/><text x="683" y="357" class="ft">%</text>
+  <rect x="728" y="316" width="66" height="66" rx="20" class="op" stroke="#fff" stroke-width="3"/><text x="761" y="359" class="ot">÷</text>
+
+  <!-- Row 2 -->
+  <rect x="494" y="394" width="66" height="66" rx="20" class="num"/><text x="527" y="436" class="kt">7</text>
+  <rect x="572" y="394" width="66" height="66" rx="20" class="num"/><text x="605" y="436" class="kt">8</text>
+  <rect x="650" y="394" width="66" height="66" rx="20" class="num"/><text x="683" y="436" class="kt">9</text>
+  <rect x="728" y="394" width="66" height="66" rx="20" class="op"/><text x="761" y="437" class="ot">×</text>
+
+  <!-- Row 3 -->
+  <rect x="494" y="472" width="66" height="66" rx="20" class="num"/><text x="527" y="514" class="kt">4</text>
+  <rect x="572" y="472" width="66" height="66" rx="20" class="num"/><text x="605" y="514" class="kt">5</text>
+  <rect x="650" y="472" width="66" height="66" rx="20" class="num"/><text x="683" y="514" class="kt">6</text>
+  <rect x="728" y="472" width="66" height="66" rx="20" class="op"/><text x="761" y="515" class="ot">−</text>
+
+  <!-- Row 4 -->
+  <rect x="494" y="550" width="66" height="66" rx="20" class="num"/><text x="527" y="592" class="kt">1</text>
+  <rect x="572" y="550" width="66" height="66" rx="20" class="num"/><text x="605" y="592" class="kt">2</text>
+  <rect x="650" y="550" width="66" height="66" rx="20" class="num"/><text x="683" y="592" class="kt">3</text>
+  <rect x="728" y="550" width="66" height="66" rx="20" class="op"/><text x="761" y="593" class="ot">+</text>
+
+  <!-- Row 5 -->
+  <rect x="494" y="628" width="144" height="66" rx="20" class="num"/><text x="527" y="670" class="kt">0</text>
+  <rect x="650" y="628" width="66" height="66" rx="20" class="num"/><text x="683" y="670" class="kt">.</text>
+  <rect x="728" y="628" width="66" height="66" rx="20" fill="#2F7D6D"/><text x="761" y="671" font-size="30" font-weight="700" fill="#fff" text-anchor="middle">=</text>
+
+  <!-- Side card: keyboard support -->
+  <rect x="120" y="300" width="290" height="190" rx="20" fill="#1C2436" stroke="#2C3750" stroke-width="1.5"/>
+  <text x="148" y="344" font-size="19" font-weight="700" fill="#E6EAF2">Keyboard support</text>
+  <g font-size="14" fill="#C9D2E3">
+    <rect x="148" y="366" width="64" height="30" rx="7" fill="#2C3750"/><text x="180" y="386" text-anchor="middle">Enter</text>
+    <text x="226" y="386" class="muted">equals</text>
+    <rect x="148" y="406" width="64" height="30" rx="7" fill="#2C3750"/><text x="180" y="426" text-anchor="middle">Esc</text>
+    <text x="226" y="426" class="muted">clear all</text>
+    <rect x="148" y="446" width="64" height="30" rx="7" fill="#2C3750"/><text x="180" y="466" text-anchor="middle">⌫</text>
+    <text x="226" y="466" class="muted">delete one</text>
+  </g>
+
+  <!-- Side card: error handling -->
+  <rect x="870" y="220" width="290" height="120" rx="20" fill="#1C2436" stroke="#2C3750" stroke-width="1.5"/>
+  <circle cx="906" cy="262" r="14" fill="#EF6B5E" opacity="0.2"/>
+  <text x="906" y="268" font-size="17" font-weight="800" fill="#EF6B5E" text-anchor="middle">!</text>
+  <text x="932" y="268" font-size="17" font-weight="700" fill="#E6EAF2">9 ÷ 0</text>
+  <text x="898" y="310" font-size="16" fill="#F2C25E">"Can't divide by zero"</text>
+
+  <!-- Side card: history -->
+  <rect x="870" y="370" width="290" height="200" rx="20" fill="#1C2436" stroke="#2C3750" stroke-width="1.5"/>
+  <text x="898" y="412" font-size="19" font-weight="700" fill="#E6EAF2">History</text>
+  <g font-size="15">
+    <text x="898" y="450" class="muted">18 × 4</text><text x="1132" y="450" text-anchor="end" fill="#E6EAF2">72</text>
+    <line x1="898" y1="466" x2="1132" y2="466" stroke="#2C3750"/>
+    <text x="898" y="494" class="muted">350 + 125</text><text x="1132" y="494" text-anchor="end" fill="#E6EAF2">475</text>
+    <line x1="898" y1="510" x2="1132" y2="510" stroke="#2C3750"/>
+    <text x="898" y="538" class="muted">15% of 2,400</text><text x="1132" y="538" text-anchor="end" fill="#E6EAF2">360</text>
+  </g>
+</svg>

@@ -1,0 +1,117 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 800" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#5A3517" flood-opacity="0.14"/>
+    </filter>
+    <linearGradient id="loaf" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#D99A55"/>
+      <stop offset="1" stop-color="#A9672F"/>
+    </linearGradient>
+    <linearGradient id="crois" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#EDB468"/>
+      <stop offset="1" stop-color="#C47F36"/>
+    </linearGradient>
+    <style>
+      .muted { fill: #7A6552; }
+      .nav { font-size: 16px; fill: #4A3322; font-weight: 600; }
+      .card { fill: #fff; }
+      .ft { font-size: 19px; font-weight: 700; fill: #3B2414; }
+      .fd { font-size: 14px; fill: #7A6552; }
+    </style>
+  </defs>
+
+  <!-- Browser chrome -->
+  <rect width="1280" height="800" fill="#FFF8EE"/>
+  <rect width="1280" height="56" fill="#E6EBF2"/>
+  <circle cx="28" cy="28" r="7" fill="#EF6B5E"/><circle cx="50" cy="28" r="7" fill="#F2B544"/><circle cx="72" cy="28" r="7" fill="#2F9E6E"/>
+  <rect x="340" y="14" width="600" height="28" rx="14" fill="#fff"/>
+  <text x="640" y="33" font-size="14" text-anchor="middle" fill="#5B6B85">crumbandco-bakery.netlify.app</text>
+  <line x1="0" y1="56" x2="1280" y2="56" stroke="#D9E0EA"/>
+
+  <!-- Navbar -->
+  <circle cx="92" cy="104" r="16" fill="#F2B544"/>
+  <path d="M84 106c2-8 14-8 16 0" fill="none" stroke="#6B3E1F" stroke-width="2.5" stroke-linecap="round"/>
+  <text x="118" y="112" font-size="24" font-weight="800" fill="#3B2414">Crumb &amp; Co.</text>
+  <text x="700" y="110" class="nav">Menu</text>
+  <text x="772" y="110" class="nav">About</text>
+  <text x="846" y="110" class="nav">Visit</text>
+  <text x="910" y="110" class="nav">Reviews</text>
+  <rect x="1060" y="84" width="140" height="44" rx="22" fill="#6B3E1F"/>
+  <text x="1130" y="112" font-size="16" font-weight="700" fill="#fff" text-anchor="middle">Order now</text>
+
+  <!-- Hero text -->
+  <rect x="80" y="190" width="230" height="32" rx="16" fill="#F2B544" opacity="0.3"/>
+  <text x="195" y="211" font-size="13" font-weight="700" fill="#8A5A17" text-anchor="middle" letter-spacing="1.5">EST. 2019 · FAISALABAD</text>
+  <text x="80" y="298" font-size="66" font-weight="800" fill="#3B2414">Freshly baked,</text>
+  <text x="80" y="374" font-size="66" font-weight="800" fill="#3B2414">every <tspan fill="#C47F36">morning.</tspan></text>
+  <text x="80" y="428" font-size="19" class="muted">Sourdough, croissants and cakes made by hand with</text>
+  <text x="80" y="456" font-size="19" class="muted">local flour and butter. Pick up or get it delivered.</text>
+
+  <rect x="80" y="492" width="178" height="54" rx="27" fill="#6B3E1F"/>
+  <text x="169" y="525" font-size="17" font-weight="700" fill="#fff" text-anchor="middle">See the menu</text>
+  <rect x="274" y="492" width="150" height="54" rx="27" fill="none" stroke="#6B3E1F" stroke-width="2"/>
+  <text x="349" y="525" font-size="17" font-weight="700" fill="#6B3E1F" text-anchor="middle">Visit us</text>
+
+  <!-- Hero illustration -->
+  <circle cx="920" cy="340" r="205" fill="#F6D9A8"/>
+  <circle cx="920" cy="340" r="160" fill="#F9E4BE"/>
+
+  <!-- Plate -->
+  <ellipse cx="920" cy="450" rx="220" ry="36" fill="#fff" filter="url(#shadow)"/>
+  <ellipse cx="920" cy="446" rx="180" ry="24" fill="#F4EDE3"/>
+
+  <!-- Sourdough loaf -->
+  <ellipse cx="880" cy="385" rx="150" ry="78" fill="url(#loaf)"/>
+  <path d="M790 360c20-16 40-20 60-18M840 344c24-14 48-16 70-12M900 336c24-8 44-6 64 2" fill="none" stroke="#F3D3A3" stroke-width="7" stroke-linecap="round"/>
+  <ellipse cx="850" cy="342" rx="60" ry="10" fill="#fff" opacity="0.18"/>
+
+  <!-- Croissant -->
+  <g transform="translate(1010 402) rotate(-12)">
+    <ellipse cx="0" cy="0" rx="34" ry="30" fill="url(#crois)"/>
+    <ellipse cx="-40" cy="10" rx="26" ry="22" fill="url(#crois)"/>
+    <ellipse cx="40" cy="10" rx="26" ry="22" fill="url(#crois)"/>
+    <ellipse cx="-70" cy="24" rx="16" ry="13" fill="#C47F36"/>
+    <ellipse cx="70" cy="24" rx="16" ry="13" fill="#C47F36"/>
+    <path d="M-16 -22c8 14 8 30 0 44M16 -22c-8 14-8 30 0 44" fill="none" stroke="#A9672F" stroke-width="2.5" opacity="0.6"/>
+  </g>
+
+  <!-- Donut -->
+  <circle cx="760" cy="428" r="42" fill="#D99A55"/>
+  <path d="M722 420a38 38 0 0 1 76 0c0 8-6 6-10 12s-8 4-12 0-8-4-14 2-10 2-14-2-8 0-12 4-10 2-14-16z" fill="#F4A6B8"/>
+  <circle cx="760" cy="424" r="12" fill="#D99A55"/>
+  <circle cx="760" cy="424" r="8" fill="#F4EDE3"/>
+  <g stroke-width="3.5" stroke-linecap="round">
+    <line x1="738" y1="404" x2="744" y2="400" stroke="#fff"/>
+    <line x1="775" y1="400" x2="781" y2="405" stroke="#2F7D6D"/>
+    <line x1="786" y1="418" x2="788" y2="425" stroke="#fff"/>
+    <line x1="735" y1="424" x2="736" y2="431" stroke="#F2B544"/>
+    <line x1="758" y1="398" x2="765" y2="398" stroke="#F2B544"/>
+  </g>
+
+  <!-- Rating card -->
+  <rect x="1020" y="170" width="190" height="72" rx="16" fill="#fff" filter="url(#shadow)"/>
+  <text x="1042" y="203" font-size="20" fill="#F2B544">★★★★★</text>
+  <text x="1042" y="228" font-size="14" class="muted"><tspan font-weight="700" fill="#3B2414">4.9</tspan> · 1,200+ reviews</text>
+
+  <!-- Feature boxes -->
+  <rect x="80" y="610" width="350" height="140" rx="18" class="card" filter="url(#shadow)"/>
+  <circle cx="130" cy="660" r="26" fill="#F2B544" opacity="0.3"/>
+  <path d="M120 666h20l-3-12h-14z M124 654c0-6 12-6 12 0" fill="none" stroke="#8A5A17" stroke-width="2.5" stroke-linejoin="round"/>
+  <text x="172" y="656" class="ft">Baked daily</text>
+  <text x="172" y="680" class="fd">Out of the oven by 7 am,</text>
+  <text x="172" y="700" class="fd">every single day.</text>
+
+  <rect x="465" y="610" width="350" height="140" rx="18" class="card" filter="url(#shadow)"/>
+  <circle cx="515" cy="660" r="26" fill="#2F7D6D" opacity="0.15"/>
+  <path d="M515 674c-10-6-14-16-10-26 10 0 16 8 10 26zM515 674c6-10 14-12 20-10-2 8-10 12-20 10" fill="none" stroke="#2F7D6D" stroke-width="2.5" stroke-linejoin="round"/>
+  <text x="557" y="656" class="ft">Local ingredients</text>
+  <text x="557" y="680" class="fd">Flour, milk and butter from</text>
+  <text x="557" y="700" class="fd">farms near Faisalabad.</text>
+
+  <rect x="850" y="610" width="350" height="140" rx="18" class="card" filter="url(#shadow)"/>
+  <circle cx="900" cy="660" r="26" fill="#6B3E1F" opacity="0.12"/>
+  <path d="M884 664v-12h20v12zM904 656h7l5 6v2h-12M890 668a3 3 0 1 0 0.1 0M910 668a3 3 0 1 0 0.1 0" fill="none" stroke="#6B3E1F" stroke-width="2.5" stroke-linejoin="round"/>
+  <text x="942" y="656" class="ft">Free delivery</text>
+  <text x="942" y="680" class="fd">On orders over Rs. 1,500</text>
+  <text x="942" y="700" class="fd">within the city.</text>
+</svg>

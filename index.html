@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Ayesha Bashir – Front-End Developer and Data Analyst from Faisalabad, Pakistan.">
+  <title>Ayesha Bashir | Front-End Developer & Data Analyst</title>
+
+  <!-- Google Fonts: Bricolage Grotesque for headings, Karla for body text -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Karla:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===== Header & Navigation ===== -->
+  <header class="site-header" id="site-header">
+    <nav class="navbar container" aria-label="Main navigation">
+      <a href="#home" class="logo">Ayesha<span class="logo-dot">.</span></a>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <a href="#contact" class="btn btn-primary btn-small nav-cta">Hire me</a>
+
+        <!-- Dark / light mode toggle -->
+        <button class="theme-toggle" id="theme-toggle" aria-label="Switch to dark mode">
+          <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+          <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><path d="M12 1.5v3M12 19.5v3M1.5 12h3M19.5 12h3M4.6 4.6l2.1 2.1M17.3 17.3l2.1 2.1M4.6 19.4l2.1-2.1M17.3 6.7l2.1-2.1"/></svg>
+        </button>
+
+        <!-- Hamburger button (mobile only) -->
+        <button class="menu-toggle" id="menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ===== Hero / Introduction ===== -->
+    <section class="hero" id="home">
+      <!-- Decorative background shapes -->
+      <div class="hero-bg" aria-hidden="true">
+        <span class="blob blob-1"></span>
+        <span class="blob blob-2"></span>
+      </div>
+
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <p class="status-pill"><span class="status-dot"></span>Open to internships &amp; junior roles</p>
+          <p class="hero-greeting">Hi, I'm</p>
+          <h1 class="hero-name">Ayesha <span class="highlight">Bashir</span></h1>
+          <p class="hero-role">
+            I'm a <span class="typing" id="typing" aria-live="polite"></span><span class="cursor" aria-hidden="true">|</span>
+          </p>
+          <p class="hero-tagline">
+            I build clean, responsive websites and turn messy spreadsheets into charts people can actually read.
+          </p>
+          <div class="hero-buttons">
+            <a href="#projects" class="btn btn-primary">
+              See my projects
+              <svg class="btn-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+            <a href="#contact" class="btn btn-outline">Contact me</a>
+          </div>
+
+          <ul class="hero-stats" aria-label="Quick facts">
+            <li><strong>4+</strong><span>Projects built</span></li>
+            <li><strong>8</strong><span>Core skills</span></li>
+            <li><strong>2</strong><span>Tracks: web &amp; data</span></li>
+          </ul>
+        </div>
+
+        <!-- Small chart that grows on page load – mixes both of my tracks: code + data -->
+        <div class="hero-visual">
+          <figure class="hero-chart" aria-label="Chart of hours I spent practising each skill per week">
+            <div class="chart-header" aria-hidden="true">
+              <span class="dots"><i></i><i></i><i></i></span>
+              <span class="chart-title">weekly-practice.xlsx</span>
+            </div>
+            <div class="chart-legend" aria-hidden="true">
+              <span><i class="legend-web"></i>Web</span>
+              <span><i class="legend-data"></i>Data</span>
+            </div>
+            <div class="chart-bars">
+              <div class="bar" style="--h: 85%"><span>HTML</span></div>
+              <div class="bar" style="--h: 75%"><span>CSS</span></div>
+              <div class="bar" style="--h: 60%"><span>JS</span></div>
+              <div class="bar bar-alt" style="--h: 70%"><span>Excel</span></div>
+              <div class="bar bar-alt" style="--h: 50%"><span>Power BI</span></div>
+            </div>
+            <figcaption>Hours of practice per week, by skill</figcaption>
+          </figure>
+
+          <!-- Floating mini cards -->
+          <div class="float-card float-card-1" aria-hidden="true">
+            <span class="float-icon">&lt;/&gt;</span>
+            <div><strong>Clean code</strong><small>HTML · CSS · JS</small></div>
+          </div>
+          <div class="float-card float-card-2" aria-hidden="true">
+            <span class="float-icon float-icon-alt">▲</span>
+            <div><strong>+32% clarity</strong><small>Dashboards</small></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== About Me ===== -->
+    <section class="about section" id="about">
+      <div class="container about-grid">
+        <div class="about-photo reveal">
+          <!-- Replace with a real photo: assets/images/ayesha.jpg -->
+          <div class="photo-frame">
+            <div class="photo-placeholder" role="img" aria-label="Portrait of Ayesha Bashir">AB</div>
+          </div>
+          <div class="photo-badge">
+            <strong>D4WEE</strong>
+            <small>Program learner</small>
+          </div>
+        </div>
+        <div class="about-text reveal">
+          <p class="eyebrow">01 — About</p>
+          <h2 class="section-title">Code meets <span class="highlight">data</span>.</h2>
+          <p>
+            I'm Ayesha, a web development and data analytics learner from Faisalabad, Pakistan.
+            I joined the D4WEE program to turn my interest in technology into real, job-ready skills.
+          </p>
+          <p>
+            I enjoy the moment when a layout finally works on every screen size, and I enjoy
+            the same feeling when a pile of numbers turns into a clear chart. That's why I'm learning both.
+          </p>
+          <p>
+            Right now I'm looking for an internship or junior role where I can build front-end
+            interfaces and help teams make sense of their data.
+          </p>
+
+          <ul class="about-facts">
+            <li>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>
+              <div><small>Based in</small><strong>Faisalabad, PK</strong></div>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 9l9-5 9 5-9 5-9-5z"/><path d="M7 11.5V16c0 1.5 2.2 3 5 3s5-1.5 5-3v-4.5"/></svg>
+              <div><small>Learning</small><strong>Web &amp; Data</strong></div>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></svg>
+              <div><small>Looking for</small><strong>Internship</strong></div>
+            </li>
+          </ul>
+
+          <a href="assets/Ayesha-Bashir-Resume.pdf" class="btn btn-primary" download>
+            Download resume
+            <svg class="btn-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v12M6 10l6 6 6-6M5 20h14"/></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Skills ===== -->
+    <section class="skills section" id="skills">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">02 — Skills</p>
+          <h2 class="section-title">What I work with</h2>
+          <p class="section-sub">Two tracks, one goal: make things that are easy to use and easy to understand.</p>
+        </div>
+
+        <div class="skills-grid">
+          <article class="skill-group reveal">
+            <div class="skill-group-head">
+              <span class="skill-icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></svg>
+              </span>
+              <h3>Web development</h3>
+            </div>
+            <ul class="skill-list">
+              <li><span class="skill-name">HTML5</span><span class="skill-pct">90%</span><span class="skill-bar"><span style="--level: 90%"></span></span></li>
+              <li><span class="skill-name">CSS3</span><span class="skill-pct">80%</span><span class="skill-bar"><span style="--level: 80%"></span></span></li>
+              <li><span class="skill-name">JavaScript</span><span class="skill-pct">65%</span><span class="skill-bar"><span style="--level: 65%"></span></span></li>
+              <li><span class="skill-name">Git &amp; GitHub</span><span class="skill-pct">70%</span><span class="skill-bar"><span style="--level: 70%"></span></span></li>
+            </ul>
+          </article>
+
+          <article class="skill-group skill-group-alt reveal">
+            <div class="skill-group-head">
+              <span class="skill-icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg>
+              </span>
+              <h3>Data analytics</h3>
+            </div>
+            <ul class="skill-list">
+              <li><span class="skill-name">Excel</span><span class="skill-pct">85%</span><span class="skill-bar alt"><span style="--level: 85%"></span></span></li>
+              <li><span class="skill-name">SQL</span><span class="skill-pct">60%</span><span class="skill-bar alt"><span style="--level: 60%"></span></span></li>
+              <li><span class="skill-name">Power BI</span><span class="skill-pct">65%</span><span class="skill-bar alt"><span style="--level: 65%"></span></span></li>
+              <li><span class="skill-name">Data cleaning</span><span class="skill-pct">75%</span><span class="skill-bar alt"><span style="--level: 75%"></span></span></li>
+            </ul>
+          </article>
+        </div>
+
+        <div class="tools reveal">
+          <p class="tools-label">Also comfortable with</p>
+          <ul class="badges" aria-label="Other tools">
+            <li>VS Code</li>
+            <li>Figma</li>
+            <li>Google Sheets</li>
+            <li>Netlify</li>
+            <li>Responsive design</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Projects ===== -->
+    <section class="projects section" id="projects">
+      <div class="container">
+        <div class="section-head section-head-row reveal">
+          <div>
+            <p class="eyebrow">03 — Projects</p>
+            <h2 class="section-title">Things I've built</h2>
+          </div>
+
+          <!-- Filter buttons: data-filter matches data-category on each project -->
+          <div class="filter-buttons" role="group" aria-label="Filter projects">
+            <button class="filter-btn active" data-filter="all" aria-pressed="true">All</button>
+            <button class="filter-btn" data-filter="web" aria-pressed="false">Web</button>
+            <button class="filter-btn" data-filter="data" aria-pressed="false">Data</button>
+          </div>
+        </div>
+
+        <div class="project-grid">
+          <article class="project-card reveal" data-category="web">
+            <div class="project-media">
+              <img src="assets/images/todo-app.svg" alt="Screenshot of a to-do list app with five tasks, two marked complete, and an Add task input" loading="lazy">
+              <span class="project-tag">Web</span>
+            </div>
+            <div class="project-info">
+              <h3>To-do list app</h3>
+              <p>Add, complete and delete tasks. Tasks are saved in the browser so they stay after a refresh.</p>
+              <ul class="project-tech" aria-label="Tools used"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+              <div class="project-links">
+                <a href="#" target="_blank" rel="noopener">Live demo <span aria-hidden="true">↗</span></a>
+                <a href="#" target="_blank" rel="noopener">Code <span aria-hidden="true">↗</span></a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-category="web">
+            <div class="project-media">
+              <img src="assets/images/landing-page.svg" alt="Screenshot of the Crumb &amp; Co. bakery landing page with a headline, bread illustration and three feature boxes" loading="lazy">
+              <span class="project-tag">Web</span>
+            </div>
+            <div class="project-info">
+              <h3>Bakery landing page</h3>
+              <p>A responsive landing page for a local bakery, built with Flexbox and CSS Grid.</p>
+              <ul class="project-tech" aria-label="Tools used"><li>HTML</li><li>CSS</li></ul>
+              <div class="project-links">
+                <a href="#" target="_blank" rel="noopener">Live demo <span aria-hidden="true">↗</span></a>
+                <a href="#" target="_blank" rel="noopener">Code <span aria-hidden="true">↗</span></a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-category="web">
+            <div class="project-media">
+              <img src="assets/images/calculator.svg" alt="Screenshot of a dark calculator showing 2,497 ÷ 2 = 1,248.5 with yellow operator buttons" loading="lazy">
+              <span class="project-tag">Web</span>
+            </div>
+            <div class="project-info">
+              <h3>Calculator</h3>
+              <p>A working calculator that supports keyboard input and handles divide-by-zero errors.</p>
+              <ul class="project-tech" aria-label="Tools used"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+              <div class="project-links">
+                <a href="#" target="_blank" rel="noopener">Live demo <span aria-hidden="true">↗</span></a>
+                <a href="#" target="_blank" rel="noopener">Code <span aria-hidden="true">↗</span></a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-category="data">
+            <div class="project-media">
+              <img src="assets/images/sales-dashboard.svg" alt="Screenshot of a sales dashboard with four summary numbers, a monthly revenue bar chart, a category donut chart and a top products table" loading="lazy">
+              <span class="project-tag project-tag-alt">Data</span>
+            </div>
+            <div class="project-info">
+              <h3>Sales dashboard</h3>
+              <p>Cleaned a year of store sales data and built a dashboard showing monthly trends and top categories.</p>
+              <ul class="project-tech" aria-label="Tools used"><li>Excel</li><li>Power BI</li></ul>
+              <div class="project-links">
+                <a href="#" target="_blank" rel="noopener">View report <span aria-hidden="true">↗</span></a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Contact ===== -->
+    <section class="contact section" id="contact">
+      <div class="container contact-grid">
+        <div class="contact-info reveal">
+          <p class="eyebrow">04 — Contact</p>
+          <h2 class="section-title">Let's <span class="highlight">talk</span></h2>
+          <p>Have an internship, project or question? Send me a message and I'll reply within two days.</p>
+          <ul class="contact-links">
+            <li>
+              <a href="mailto:ayesha.bashir@example.com">
+                <span class="contact-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></span>
+                <span><small>Email</small>ayesha.bashir@example.com</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/ayesha-bashir" target="_blank" rel="noopener">
+                <span class="contact-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 10v7M8 7v.01M12 17v-4a2 2 0 0 1 4 0v4M12 10v7"/></svg></span>
+                <span><small>LinkedIn</small>ayesha-bashir</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/ayesha-bashir" target="_blank" rel="noopener">
+                <span class="contact-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 19c-4 1.3-4-2-6-2.5M15 21v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 0 0-1.3-3.2 4.2 4.2 0 0 0-.1-3.2s-1-.3-3.4 1.3a11.6 11.6 0 0 0-6.2 0C6.6 2.8 5.6 3.1 5.6 3.1a4.2 4.2 0 0 0-.1 3.2A4.6 4.6 0 0 0 4.2 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21"/></svg></span>
+                <span><small>GitHub</small>ayesha-bashir</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://wa.me/920000000000" target="_blank" rel="noopener">
+                <span class="contact-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 11.5a8.5 8.5 0 0 1-12.6 7.4L3 20.5l1.6-5.2A8.5 8.5 0 1 1 21 11.5z"/></svg></span>
+                <span><small>WhatsApp</small>Message me</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- novalidate: we handle validation ourselves in script.js -->
+        <form class="contact-form reveal" id="contact-form" novalidate>
+          <h3 class="form-title">Send a message</h3>
+          <div class="form-field">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" autocomplete="name" placeholder="Your name">
+            <small class="error-msg" id="name-error"></small>
+          </div>
+          <div class="form-field">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" autocomplete="email" placeholder="you@example.com">
+            <small class="error-msg" id="email-error"></small>
+          </div>
+          <div class="form-field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell me about your project or role..."></textarea>
+            <small class="error-msg" id="message-error"></small>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">
+            Send message
+            <svg class="btn-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+          </button>
+          <p class="form-status" id="form-status" role="status"></p>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-cta">
+        <h2>Have an idea? Let's build it together.</h2>
+        <a href="#contact" class="btn btn-accent">Get in touch</a>
+      </div>
+      <div class="footer-inner">
+        <a href="#home" class="logo">Ayesha<span class="logo-dot">.</span></a>
+        <p>&copy; <span id="year">2026</span> Ayesha Bashir. Built with HTML, CSS and JavaScript.</p>
+        <ul class="footer-links">
+          <li><a href="https://github.com/ayesha-bashir" target="_blank" rel="noopener">GitHub</a></li>
+          <li><a href="https://www.linkedin.com/in/ayesha-bashir" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="mailto:ayesha.bashir@example.com">Email</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to top button (shown by script.js after scrolling) -->
+  <a href="#home" class="back-to-top" id="back-to-top" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5M6 11l6-6 6 6"/></svg>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>

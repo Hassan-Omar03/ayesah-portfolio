@@ -1,0 +1,170 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 800" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <defs>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#1B2A4A" flood-opacity="0.08"/>
+    </filter>
+    <linearGradient id="barG" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#4FA592"/>
+      <stop offset="1" stop-color="#2F7D6D"/>
+    </linearGradient>
+    <style>
+      .card { fill: #fff; stroke: #E4EAF2; stroke-width: 1.5; }
+      .muted { fill: #5B6B85; }
+      .lbl { font-size: 13px; fill: #5B6B85; }
+      .kpi { font-size: 30px; font-weight: 800; fill: #1B2A4A; }
+      .up { font-size: 13px; font-weight: 700; fill: #22A06B; }
+      .grid { stroke: #EEF2F7; stroke-width: 1.5; }
+      .ax { font-size: 12px; fill: #9AA7BD; }
+      .h { font-size: 17px; font-weight: 700; fill: #1B2A4A; }
+      .side { font-size: 15px; fill: #9AA7BD; }
+      .td { font-size: 14px; fill: #1B2A4A; }
+    </style>
+  </defs>
+
+  <!-- Browser chrome -->
+  <rect width="1280" height="800" fill="#F3F6FA"/>
+  <rect width="1280" height="56" fill="#E6EBF2"/>
+  <circle cx="28" cy="28" r="7" fill="#EF6B5E"/><circle cx="50" cy="28" r="7" fill="#F2B544"/><circle cx="72" cy="28" r="7" fill="#2F9E6E"/>
+  <rect x="340" y="14" width="600" height="28" rx="14" fill="#fff"/>
+  <text x="640" y="33" font-size="14" text-anchor="middle" fill="#5B6B85">app.powerbi.com · Store Sales 2025</text>
+
+  <!-- Sidebar -->
+  <rect x="0" y="56" width="220" height="744" fill="#1B2A4A"/>
+  <rect x="24" y="84" width="34" height="34" rx="9" fill="#F2B544"/>
+  <path d="M32 110v-8M41 110v-14M50 110v-5" stroke="#1B2A4A" stroke-width="3" stroke-linecap="round"/>
+  <text x="70" y="108" font-size="19" font-weight="800" fill="#fff">SalesView</text>
+  <rect x="14" y="146" width="192" height="42" rx="10" fill="#2F7D6D"/>
+  <text x="34" y="173" font-size="15" font-weight="700" fill="#fff">Overview</text>
+  <text x="34" y="225" class="side">Products</text>
+  <text x="34" y="267" class="side">Stores</text>
+  <text x="34" y="309" class="side">Customers</text>
+  <text x="34" y="351" class="side">Data sources</text>
+  <rect x="14" y="690" width="192" height="80" rx="12" fill="#243457"/>
+  <text x="30" y="720" font-size="13" fill="#9AA7BD">Last refresh</text>
+  <text x="30" y="746" font-size="15" font-weight="700" fill="#fff">28 Sep 2026, 9:14</text>
+
+  <!-- Header -->
+  <text x="250" y="102" font-size="26" font-weight="800" fill="#1B2A4A">Sales Overview · 2025</text>
+  <rect x="990" y="78" width="130" height="34" rx="17" fill="#fff" stroke="#D9E0EA"/>
+  <text x="1055" y="100" font-size="13" font-weight="700" text-anchor="middle" fill="#1B2A4A">Jan – Dec 2025</text>
+  <rect x="1130" y="78" width="120" height="34" rx="17" fill="#fff" stroke="#D9E0EA"/>
+  <text x="1190" y="100" font-size="13" font-weight="700" text-anchor="middle" fill="#1B2A4A">All stores ▾</text>
+
+  <!-- KPI cards -->
+  <rect x="250" y="130" width="235" height="100" rx="14" class="card" filter="url(#shadow)"/>
+  <rect x="250" y="130" width="5" height="100" rx="2" fill="#2F7D6D"/>
+  <text x="272" y="160" class="lbl">Total revenue</text>
+  <text x="272" y="198" class="kpi">PKR 3.1M</text>
+  <text x="272" y="218" class="up">▲ 12.4% vs 2024</text>
+
+  <rect x="505" y="130" width="235" height="100" rx="14" class="card" filter="url(#shadow)"/>
+  <rect x="505" y="130" width="5" height="100" rx="2" fill="#F2B544"/>
+  <text x="527" y="160" class="lbl">Orders</text>
+  <text x="527" y="198" class="kpi">6,240</text>
+  <text x="527" y="218" class="up">▲ 8.1% vs 2024</text>
+
+  <rect x="760" y="130" width="235" height="100" rx="14" class="card" filter="url(#shadow)"/>
+  <rect x="760" y="130" width="5" height="100" rx="2" fill="#1B2A4A"/>
+  <text x="782" y="160" class="lbl">Avg. order value</text>
+  <text x="782" y="198" class="kpi">PKR 497</text>
+  <text x="782" y="218" class="up">▲ 3.9% vs 2024</text>
+
+  <rect x="1015" y="130" width="235" height="100" rx="14" class="card" filter="url(#shadow)"/>
+  <rect x="1015" y="130" width="5" height="100" rx="2" fill="#9AA7BD"/>
+  <text x="1037" y="160" class="lbl">Returning customers</text>
+  <text x="1037" y="198" class="kpi">41%</text>
+  <text x="1037" y="218" class="up">▲ 5 pts vs 2024</text>
+
+  <!-- Bar chart card -->
+  <rect x="250" y="250" width="640" height="310" rx="14" class="card" filter="url(#shadow)"/>
+  <text x="272" y="282" class="h">Monthly revenue</text>
+  <text x="868" y="282" font-size="12" text-anchor="end" class="muted">PKR, thousands</text>
+
+  <line x1="310" y1="520" x2="868" y2="520" stroke="#D9E0EA" stroke-width="1.5"/>
+  <line x1="310" y1="470.5" x2="868" y2="470.5" class="grid"/>
+  <line x1="310" y1="421" x2="868" y2="421" class="grid"/>
+  <line x1="310" y1="371.5" x2="868" y2="371.5" class="grid"/>
+  <line x1="310" y1="322" x2="868" y2="322" class="grid"/>
+  <text x="300" y="524" class="ax" text-anchor="end">0</text>
+  <text x="300" y="474" class="ax" text-anchor="end">90</text>
+  <text x="300" y="425" class="ax" text-anchor="end">180</text>
+  <text x="300" y="375" class="ax" text-anchor="end">270</text>
+  <text x="300" y="326" class="ax" text-anchor="end">360</text>
+
+  <g fill="url(#barG)">
+    <rect x="316" y="421" width="30" height="99" rx="5"/>
+    <rect x="363" y="432" width="30" height="88" rx="5"/>
+    <rect x="410" y="404.5" width="30" height="115.5" rx="5"/>
+    <rect x="457" y="393.5" width="30" height="126.5" rx="5"/>
+    <rect x="504" y="410" width="30" height="110" rx="5"/>
+    <rect x="551" y="377" width="30" height="143" rx="5"/>
+    <rect x="598" y="366" width="30" height="154" rx="5"/>
+    <rect x="645" y="382.5" width="30" height="137.5" rx="5"/>
+    <rect x="692" y="355" width="30" height="165" rx="5"/>
+    <rect x="739" y="344" width="30" height="176" rx="5"/>
+    <rect x="786" y="360.5" width="30" height="159.5" rx="5"/>
+  </g>
+  <rect x="833" y="322" width="30" height="198" rx="5" fill="#F2B544"/>
+
+  <g class="ax" text-anchor="middle">
+    <text x="331" y="540">Jan</text><text x="378" y="540">Feb</text><text x="425" y="540">Mar</text>
+    <text x="472" y="540">Apr</text><text x="519" y="540">May</text><text x="566" y="540">Jun</text>
+    <text x="613" y="540">Jul</text><text x="660" y="540">Aug</text><text x="707" y="540">Sep</text>
+    <text x="754" y="540">Oct</text><text x="801" y="540">Nov</text><text x="848" y="540">Dec</text>
+  </g>
+
+  <!-- Tooltip on December -->
+  <rect x="746" y="296" width="80" height="44" rx="8" fill="#1B2A4A"/>
+  <text x="786" y="314" font-size="11" text-anchor="middle" fill="#9AA7BD">December</text>
+  <text x="786" y="331" font-size="13" font-weight="700" text-anchor="middle" fill="#fff">PKR 360K</text>
+
+  <!-- Donut chart card -->
+  <rect x="910" y="250" width="340" height="310" rx="14" class="card" filter="url(#shadow)"/>
+  <text x="932" y="282" class="h">Sales by category</text>
+
+  <g transform="rotate(-90 1010 420)" fill="none" stroke-width="28">
+    <circle cx="1010" cy="420" r="70" stroke="#2F7D6D" stroke-dasharray="167 440"/>
+    <circle cx="1010" cy="420" r="70" stroke="#F2B544" stroke-dasharray="119 440" stroke-dashoffset="-167"/>
+    <circle cx="1010" cy="420" r="70" stroke="#1B2A4A" stroke-dasharray="88 440" stroke-dashoffset="-286"/>
+    <circle cx="1010" cy="420" r="70" stroke="#C9D2E3" stroke-dasharray="66 440" stroke-dashoffset="-374"/>
+  </g>
+  <text x="1010" y="418" font-size="22" font-weight="800" text-anchor="middle" fill="#1B2A4A">6,240</text>
+  <text x="1010" y="438" font-size="12" text-anchor="middle" class="muted">orders</text>
+
+  <g font-size="14">
+    <rect x="1108" y="352" width="12" height="12" rx="3" fill="#2F7D6D"/>
+    <text x="1128" y="363" class="muted">Bakery</text><text x="1232" y="363" text-anchor="end" font-weight="700" fill="#1B2A4A">38%</text>
+    <rect x="1108" y="386" width="12" height="12" rx="3" fill="#F2B544"/>
+    <text x="1128" y="397" class="muted">Drinks</text><text x="1232" y="397" text-anchor="end" font-weight="700" fill="#1B2A4A">27%</text>
+    <rect x="1108" y="420" width="12" height="12" rx="3" fill="#1B2A4A"/>
+    <text x="1128" y="431" class="muted">Snacks</text><text x="1232" y="431" text-anchor="end" font-weight="700" fill="#1B2A4A">20%</text>
+    <rect x="1108" y="454" width="12" height="12" rx="3" fill="#C9D2E3"/>
+    <text x="1128" y="465" class="muted">Other</text><text x="1232" y="465" text-anchor="end" font-weight="700" fill="#1B2A4A">15%</text>
+  </g>
+
+  <!-- Top products table -->
+  <rect x="250" y="580" width="1000" height="200" rx="14" class="card" filter="url(#shadow)"/>
+  <text x="272" y="612" class="h">Top products</text>
+  <g class="lbl" font-weight="700">
+    <text x="272" y="646">PRODUCT</text><text x="560" y="646">CATEGORY</text>
+    <text x="760" y="646">UNITS</text><text x="900" y="646">REVENUE</text><text x="1060" y="646">TREND</text>
+  </g>
+  <line x1="272" y1="658" x2="1228" y2="658" stroke="#E4EAF2" stroke-width="1.5"/>
+
+  <text x="272" y="686" class="td" font-weight="700">Chocolate croissant</text>
+  <rect x="560" y="672" width="64" height="22" rx="11" fill="#2F7D6D" opacity="0.12"/><text x="592" y="687" font-size="12" font-weight="700" fill="#2F7D6D" text-anchor="middle">Bakery</text>
+  <text x="760" y="686" class="td">1,842</text><text x="900" y="686" class="td">PKR 552K</text>
+  <polyline points="1060,690 1080,684 1100,686 1120,676 1140,678 1160,668" fill="none" stroke="#22A06B" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <line x1="272" y1="704" x2="1228" y2="704" stroke="#EEF2F7" stroke-width="1.5"/>
+  <text x="272" y="731" class="td" font-weight="700">Iced caramel latte</text>
+  <rect x="560" y="717" width="64" height="22" rx="11" fill="#F2B544" opacity="0.25"/><text x="592" y="732" font-size="12" font-weight="700" fill="#A8740F" text-anchor="middle">Drinks</text>
+  <text x="760" y="731" class="td">1,315</text><text x="900" y="731" class="td">PKR 460K</text>
+  <polyline points="1060,736 1080,730 1100,732 1120,722 1140,716 1160,712" fill="none" stroke="#22A06B" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <line x1="272" y1="749" x2="1228" y2="749" stroke="#EEF2F7" stroke-width="1.5"/>
+  <text x="272" y="772" class="td" font-weight="700">Sourdough loaf</text>
+  <rect x="560" y="758" width="64" height="22" rx="11" fill="#2F7D6D" opacity="0.12"/><text x="592" y="773" font-size="12" font-weight="700" fill="#2F7D6D" text-anchor="middle">Bakery</text>
+  <text x="760" y="772" class="td">968</text><text x="900" y="772" class="td">PKR 387K</text>
+  <polyline points="1060,766 1080,770 1100,764 1120,768 1140,762 1160,764" fill="none" stroke="#5B6B85" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
